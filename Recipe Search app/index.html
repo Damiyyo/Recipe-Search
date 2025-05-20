@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Locator</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+      <div class="recipe-finder-container">
+      <h1>Recipe Locator</h1>
+
+      <form id="search-form" class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by name (eg. 'Orange')"
+        />
+
+        <button type="submit" id="search-button">Search</button>
+      </form>
+
+      <div class="random-button-container">
+        <button id="random-button" class="random-button">
+          Get Random Recipe
+        </button>
+      </div>
+
+      <div class="message" id="message-area">
+        Search for a recipe or get a random one!
+      </div>
+
+      <div class="results-grid" id="results-grid"></div>
+    </div>
+
+    <div class="modal-container hidden" id="recipe-modal">
+      <div class="modal-content">
+        <button id="modal-close-btn" class="modal-close-btn">+</button>
+        <div id="recipe-details-content"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
